@@ -42,7 +42,21 @@
       </nav>
     </header>
     <main>
-      <h1>Sign In</h1>
+      <section>
+        <h1>Sign In</h1>
+        <p>Sign in to manage blog posts</p>
+        <form class="login" method="post">
+          <label for="email">Email address*</label>
+          <input type="email" name="email" id="email" required />
+          <label for="password">Password*</label>
+          <input type="password" name="password" id="password" required />
+          <input type="submit" value="Sign In" class="button" />
+        </form>
+        <div>
+          <p>Don't have an account?</p>
+          <a href="/account/register.html">Create account</a>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="logo">
