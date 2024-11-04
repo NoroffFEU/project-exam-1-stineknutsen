@@ -8,6 +8,10 @@ body {
   flex-direction: column;
 }
 
+main {
+  flex-grow: 1;
+}
+
 /* Background */
 header,
 footer {
@@ -57,3 +61,38 @@ li {
 }
 
 /* Icons */
+i {
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* Header & Footer */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  .footercontent {
+    display: flex;
+  }
+
+  .footerlinks,
+  .footercontact {
+    display: flex;
+    flex-direction: column;
+  }
+}
