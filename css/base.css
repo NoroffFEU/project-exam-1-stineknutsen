@@ -41,6 +41,7 @@ a {
   color: var(--colour-text-light);
 }
 
+a {
   text-decoration: none;
 }
 
