@@ -41,9 +41,11 @@ a {
   color: var(--colour-text-light);
 }
 
-a,
-li {
   text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
 }
 
 /* Logo */
@@ -76,23 +78,25 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 50px;
 }
 
 footer {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 50px;
+  color: var(--colour-text-light);
+}
+
+.footerlinks {
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 600px) {
-  .footercontent {
-    display: flex;
-  }
-
-  .footerlinks,
-  .footercontact {
-    display: flex;
-    flex-direction: column;
+  footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
   }
 }
